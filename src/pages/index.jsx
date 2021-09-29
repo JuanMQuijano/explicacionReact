@@ -1,14 +1,13 @@
 import CardRazasPerros from "components/CardRazasPerros";
 import logo from "media/logo.png";
-import "App.css";
 import borderCollie from "media/borderCollie.jpg";
 import rhode from "media/rhodesian.jpg";
 import past from "media/pastor.jpg";
 
-function Index(){    
+function Index() {
+  return (
     <div>
       <header>
-        <div>Hola mundo esto es un div</div>           
         <ul class="navbar">
           <li>
             <img src={logo} alt="imagen" class="logo" />
@@ -33,17 +32,17 @@ function Index(){
       <main>
         <section>
           <h1>Razas de Perros</h1>
-          <ul class="breedCardContainer">      
-            <CardRazasPerros nombreRaza="Pastor Aleman" imagen={past}/>
-            <CardRazasPerros nombreRaza="Border Collie" imagen={borderCollie}/>
-            <CardRazasPerros nombreRaza="Rhodesian" imagen={rhode}  />            
+          <ul class="breedCardContainer">
+            <CardRazasPerros nombreRaza="Pastor Aleman" imagen={past} />
+            <CardRazasPerros nombreRaza="Border Collie" imagen={borderCollie} />
+            <CardRazasPerros nombreRaza="Rhodesian" imagen={rhode} />
           </ul>
         </section>
         <section></section>
       </main>
-      <footer>        
-      </footer>    
-      </div>
+      <footer></footer>
+    </div>
+  );
 }
 
 export default Index;

@@ -1,28 +1,23 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "App.css";
-import Index from "pages";
-import RhodesianInfoPage from "pages/rhodesian";
+import Index from 'pages/index';
+import RhodesianInfoPage from 'pages/rhodesian';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import 'styles/estilos.css';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Switch>
-          <Route path="/index">
-            <Index/>
+        <Switch>          
+          <Route path='/rhodesian'>
+            <RhodesianInfoPage />
           </Route>
-        </Switch>
-        <Switch>
-          <Route path="/rhodesian">
-            <RhodesianInfoPage/>
+          <Route path='/'>
+            <Index />
           </Route>
         </Switch>
       </Router>
-      
     </div>
   );
 }
-
-
 
 export default App;
