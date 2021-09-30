@@ -1,8 +1,8 @@
 import logo from "media/logo.png";
 
 const Header = () => {
-    return (
-        <header>
+  return (
+    <header>
       <ul class="navbar">
         <li>
           <img src={logo} alt="imagen" class="logo" />
@@ -24,7 +24,7 @@ const Header = () => {
         </li>
       </ul>
     </header>
-    );
-}
+  );
+};
 
 export default Header;
